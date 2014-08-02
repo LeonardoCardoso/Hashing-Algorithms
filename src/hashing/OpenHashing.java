@@ -1,6 +1,6 @@
 package hashing;
 
-import node.Node;
+import tree.node.Node;
 import util.HashPrinter;
 
 /** Open Hashing = Closed Addressing = Separate Chaining */

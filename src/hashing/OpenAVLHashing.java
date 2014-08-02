@@ -1,7 +1,7 @@
 package hashing;
 
-import node.AVLNode;
-import node.TreeNode;
+import tree.node.AVLNode;
+import tree.node.TreeNode;
 import util.HashPrinter;
 
 /** Open Hashing with AVL */

@@ -1,6 +1,6 @@
-package node;
+package tree.node;
 
-import tree.AVLTreeForHalfOpenHashing;
+import tree.algorithms.AVLTreeForHalfOpenHashing;
 
 public class AVLNodeForHalfOpenHashing {
 	private int key;

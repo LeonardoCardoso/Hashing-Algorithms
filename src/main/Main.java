@@ -1,6 +1,5 @@
 package main;
 
-import graphics.Joins;
 import hashing.ClosedHashingDouble;
 import hashing.ClosedHashingLinear;
 import hashing.ClosedHashingQuadratic;
@@ -11,8 +10,6 @@ import hashing.RehashingLinear;
 import hashing.RehashingQuadratic;
 
 import java.util.Random;
-
-import javax.swing.SwingUtilities;
 
 import util.HashPrinter;
 

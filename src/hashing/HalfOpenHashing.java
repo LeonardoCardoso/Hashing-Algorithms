@@ -2,8 +2,8 @@ package hashing;
 
 import java.util.ArrayList;
 
-import node.AVLNodeForHalfOpenHashing;
-import node.TreeNode;
+import tree.node.AVLNodeForHalfOpenHashing;
+import tree.node.TreeNode;
 import util.PrimeNumbers;
 import util.HashPrinter;
 

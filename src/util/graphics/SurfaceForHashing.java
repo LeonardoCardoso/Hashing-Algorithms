@@ -1,4 +1,4 @@
-package graphics;
+package util.graphics;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -7,10 +7,10 @@ import java.awt.Graphics2D;
 
 import javax.swing.JPanel;
 
-import node.DeletedNode;
-import node.Node;
+import tree.node.DeletedNode;
+import tree.node.Node;
 
-public class Surface extends JPanel {
+public class SurfaceForHashing extends JPanel {
 
 	private static final long serialVersionUID = 8753131469505687164L;
 	public static final int DIMENSION_TOP = 66, DIMENSION_LEFT = 35, DIMENSION_WIDTH = 60, DIMENSION_HEIGHT = 60;
@@ -23,7 +23,7 @@ public class Surface extends JPanel {
 	private Node[] nodes;
 	private Double loadFactor = null;
 
-	public Surface(Node[] nodes, double loadFactor) {
+	public SurfaceForHashing(Node[] nodes, double loadFactor) {
 		super();
 		this.nodes = nodes;
 		this.loadFactor = loadFactor;
@@ -97,7 +97,7 @@ public class Surface extends JPanel {
 			g2d.drawString(String.valueOf(i), numberIncrementLeft, NUMBER_POS);
 		}
 
-		// Drawing node key
+		// Drawing tree.node key
 		g2d.drawString(isDeletedNode ? "Deleted" : currentNode != null ? String.valueOf(currentNode.getKey()) : "",
 				numberNextLeft, numberTop);
 

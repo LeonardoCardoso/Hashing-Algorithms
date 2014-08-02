@@ -1,7 +1,7 @@
 package hashing;
 
-import node.DeletedNode;
-import node.Node;
+import tree.node.DeletedNode;
+import tree.node.Node;
 import util.HashPrinter;
 import util.PrimeNumbers;
 

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import node.TreeNode;
+import tree.node.TreeNode;
 
 public class AVLTreePrinter {
 

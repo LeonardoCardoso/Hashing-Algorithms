@@ -1,4 +1,4 @@
-package node;
+package tree.node;
 
 public class DeletedNode extends Node {
 	private static DeletedNode entry = null;

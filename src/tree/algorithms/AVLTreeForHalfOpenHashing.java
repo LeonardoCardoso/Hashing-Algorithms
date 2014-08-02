@@ -1,12 +1,10 @@
-package tree;
-
-import hashing.HalfOpenHashing;
+package tree.algorithms;
 
 import java.util.ArrayList;
 
 /** The same AVL with a little difference on method insert() */
 
-import node.TreeNode;
+import tree.node.TreeNode;
 import util.AVLTreePrinter;
 import util.HashPrinter;
 
@@ -22,7 +20,7 @@ public class AVLTreeForHalfOpenHashing {
 		return insertAVL(this.root, n);
 	}
 
-	/** Insert new node */
+	/** Insert new tree.node */
 	private boolean insertAVL(TreeNode currentNode, TreeNode newNode) {
 
 		if (currentNode == null) {
@@ -77,13 +75,13 @@ public class AVLTreeForHalfOpenHashing {
 		return true;
 	}
 
-	/** Finds a node */
+	/** Finds a tree.node */
 	public TreeNode find(int key) {
 		currentSearchHeight = -1;
 		return find(this.root, key);
 	}
 
-	/** Finds a node */
+	/** Finds a tree.node */
 	public TreeNode find(TreeNode currentNode, int key) {
 		currentSearchHeight++;
 
@@ -147,7 +145,7 @@ public class AVLTreeForHalfOpenHashing {
 	}
 
 	/**
-	 * Check the balance for each node recursively and call required methods for
+	 * Check the balance for each tree.node recursively and call required methods for
 	 * balancing the tree until the root is reached.
 	 */
 	protected void recursiveBalance(TreeNode currentNode) {
@@ -193,7 +191,7 @@ public class AVLTreeForHalfOpenHashing {
 	}
 
 	/**
-	 * Removes a node from the tree
+	 * Removes a tree.node from the tree
 	 * 
 	 * @hash is just to print index in table hash
 	 */
@@ -203,7 +201,7 @@ public class AVLTreeForHalfOpenHashing {
 	}
 
 	/**
-	 * Finds a node and calls a method to remove the node..
+	 * Finds a tree.node and calls a method to remove the tree.node..
 	 */
 	private void removeAVL(TreeNode startingNode, int searchingKey, int hash) {
 
@@ -236,7 +234,7 @@ public class AVLTreeForHalfOpenHashing {
 	}
 
 	/**
-	 * Removes a node from a AVL-Tree, while balancing will be done if
+	 * Removes a tree.node from a AVL-Tree, while balancing will be done if
 	 * necessary.
 	 */
 	private void removeFoundNode(TreeNode removingNode) {
@@ -295,7 +293,7 @@ public class AVLTreeForHalfOpenHashing {
 	}
 
 	/**
-	 * Left rotation using the given node.
+	 * Left rotation using the given tree.node.
 	 */
 	private TreeNode rotateLeft(TreeNode rotatingNode) {
 
@@ -334,7 +332,7 @@ public class AVLTreeForHalfOpenHashing {
 	}
 
 	/**
-	 * Right rotation using the given node.
+	 * Right rotation using the given tree.node.
 	 */
 	private TreeNode rotateRight(TreeNode rotatingNode) {
 
@@ -385,7 +383,7 @@ public class AVLTreeForHalfOpenHashing {
 	}
 
 	/**
-	 * Double rotation Left Right using the given node
+	 * Double rotation Left Right using the given tree.node
 	 */
 	private TreeNode doubleRotateLeftRight(TreeNode rotatingNode) {
 		rotatingNode.left = rotateLeft(rotatingNode.left);
@@ -393,7 +391,7 @@ public class AVLTreeForHalfOpenHashing {
 	}
 
 	/**
-	 * Double rotation Right Left using the given node
+	 * Double rotation Right Left using the given tree.node
 	 */
 	private TreeNode doubleRotateRightLeft(TreeNode rotatingNode) {
 		rotatingNode.right = rotateRight(rotatingNode.right);
@@ -403,7 +401,7 @@ public class AVLTreeForHalfOpenHashing {
 	/** Helper Functions */
 
 	/**
-	 * Returns the successor of a given node in the tree (search recursively).
+	 * Returns the successor of a given tree.node in the tree (search recursively).
 	 */
 	private TreeNode successor(TreeNode predecessorNode) {
 		TreeNode successorNode = null;
@@ -438,7 +436,7 @@ public class AVLTreeForHalfOpenHashing {
 	}
 
 	/**
-	 * Calculating the height of a node.
+	 * Calculating the height of a tree.node.
 	 */
 	private int height(TreeNode currentNode) {
 
@@ -486,7 +484,7 @@ public class AVLTreeForHalfOpenHashing {
 	}
 
 	/**
-	 * All information about a node.
+	 * All information about a tree.node.
 	 */
 	private void getAll(TreeNode node) {
 		int l = 0;

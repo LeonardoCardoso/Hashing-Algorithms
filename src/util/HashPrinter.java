@@ -1,17 +1,17 @@
 package util;
 
-import graphics.Joins;
-import graphics.SurfaceTree;
-import graphics.SurfaceTreeForHalfOpenHashing;
+import util.graphics.Joins;
+import util.graphics.SurfaceTreeForHashing;
+import util.graphics.SurfaceTreeForHalfOpenHashing;
 import hashing.HalfOpenHashing;
 
 import javax.swing.SwingUtilities;
 
-import node.AVLNode;
-import node.AVLNodeForHalfOpenHashing;
-import node.DeletedNode;
-import node.Node;
-import node.TreeNode;
+import tree.node.AVLNode;
+import tree.node.AVLNodeForHalfOpenHashing;
+import tree.node.DeletedNode;
+import tree.node.Node;
+import tree.node.TreeNode;
 
 public class HashPrinter {
 
@@ -254,7 +254,7 @@ public class HashPrinter {
 		SwingUtilities.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				new SurfaceTree(title, nodes, loadFactor, balacingFactor);
+				new SurfaceTreeForHashing(title, nodes, loadFactor, balacingFactor);
 			}
 		});
 	}

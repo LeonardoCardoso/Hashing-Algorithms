@@ -1,6 +1,6 @@
-package node;
+package tree.node;
 
-import tree.AVLTree;
+import tree.algorithms.AVLTree;
 
 public class AVLNode {
 	private int key;
