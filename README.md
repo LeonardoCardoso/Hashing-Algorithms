@@ -1,6 +1,8 @@
 Hashing Algorithms
 ==================
 
+Developed by <a href='https://github.com/LeonardoCardoso' target='_blank'>@LeonardoCardoso</a>. 
+
 Hash table (also hash map) is a data structure used to implement an associative array, a structure that can map keys to values. Implementally talking, hash table is an array-based data structure, which uses a hash function to compute an index into an array of buckets or slots, from which the correct value can be found. It's designed to keep insertion, deletion and search with O(1) complexity.
 
 This project contains
