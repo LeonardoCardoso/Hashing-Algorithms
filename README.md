@@ -28,6 +28,9 @@ This project contains
 
 For more details and see examples visit http://lab.leocardz.com/hash-table-and-hashing-algorithms/
 
+## Contact
+Contact me either by Twitter [@leocardz](https://twitter.com/leocardz) or emailing me to [contact@leocardz.com](mailto:contact@leocardz.com).
+
 
 ## License
 
